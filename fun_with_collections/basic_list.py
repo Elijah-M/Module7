@@ -33,5 +33,6 @@ def make_list():
 
     return user_input
 
+
 if __name__ == '__main__':
     print(make_list())
