@@ -2,7 +2,9 @@
 Author: Elijah Morishita
 elmorishita@dmacc.edu
 10/5/2020
-This program gathers numeric input from a user, and places it into a list as a string
+This program gathers numeric input from a user, and places it into a list as a string,
+it also gives the user a chance to search for an index within the list they created,
+and finally it sorts the list in numeric order.
 """
 
 
@@ -43,6 +45,16 @@ def search_list(user_input):
     return choice
 
 
+def sort_list(user_input):
+    """
+    This function sorts the list and then returns it to keep the main function cleaner
+    :param user_input:
+    :return: user_input
+    """
+    user_input.sort()
+    return user_input
+
+
 def make_list():
     """
     This function places the return of get_input() into a list, then returns the list
@@ -57,9 +69,9 @@ def make_list():
     if index != -1:
         print("You've chosen index #", (index + 1), ", which is ", user_input[index], "on the list")
 
-    return user_input
+    return sort_list(user_input)
 
 
 if __name__ == '__main__':
 
-    make_list()
+    print("And the final results (sorted) are...", make_list())
