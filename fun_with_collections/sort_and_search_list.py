@@ -52,7 +52,7 @@ def sort_list(user_input):
     :return: user_input
     """
     user_input.sort()
-    return user_input
+    return user_input  # added a return statement for a cleaner looking main function
 
 
 def make_list():
