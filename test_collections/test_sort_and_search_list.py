@@ -13,7 +13,7 @@ class TestList(unittest.TestCase):
     @patch('fun_with_collections.sort_and_search_list.sort_list', return_value=[3.0,45.0,6.0])
     def test_sort_list(self, input):
         x = make_list()
-        self.assertEqual(sort_list(x), [3.0,333.0,6.0])
+        self.assertEqual(sort_list(x), [3.0,6.0, 45.0])
 
 if __name__ == '__main__':
     unittest.self
