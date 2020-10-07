@@ -1,6 +1,6 @@
 """
 Author: Elijah Morishita
-elmorishita@dmacc.edu
+elmorishi  ta@dmacc.edu
 10/5/2020
 This program gathers numeric input from a user, and places it into a list as a string
 """
